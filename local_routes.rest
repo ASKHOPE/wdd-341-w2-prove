@@ -4,7 +4,7 @@
 GET http://localhost:8080/contacts
 
 ### Get contact by id=
-GET http://localhost:8080/contacts/
+GET http://localhost:8080/contacts/6518a8547baafb2d7dcbbff1
 
 
 ### Create contact
@@ -21,7 +21,7 @@ content-type: application/json
 
 
 ### PUT contact
-PUT http://localhost:8080/contacts/65182514e1310be95d95b558 HTTP/1.1
+PUT http://localhost:8080/contacts/6518a8547baafb2d7dcbbff1 HTTP/1.1
 content-type: application/json
 
 {
@@ -33,4 +33,4 @@ content-type: application/json
 }
 
 ### DELETE contact
-DELETE  http://localhost:8080/contacts/651824b2d8db462ca3d702c7 HTTP/1.1
+DELETE  http://localhost:8080/contacts/6518a8547baafb2d7dcbbff1 HTTP/1.1
