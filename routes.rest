@@ -1,4 +1,4 @@
-// LOCALHOST
+// LOCALHOST & PRODUCTION Week 1 
 ###
 GET http://localhost:8080/contacts
 ###
@@ -14,14 +14,20 @@ GET https://three41wddw2.onrender.com/contacts/650e9064eda1c94561e08a3f
 ###
 GET https://three41wddw2.onrender.com/contacts/650e9075eda1c94561e08a40
 
-// PRODUCTION Deploy
+
+// LOCALHOST Week 3
+
 ### Get all contacts
-GET https://three41wddw2.onrender.com/contacts/
-### Get contact by id
-GET https://three41wddw2.onrender.com/contacts/650e9057eda1c94561e08a3e
+GET http://localhost:8080/contacts
+
+### Get contact by id=
+GET http://localhost:8080/contacts/
+
+
 ### Create contact
-POST https://three41wddw2.onrender.com/contacts/ HTTP/1.1
+POST http://localhost:8080/contacts/ HTTP/1.1
 content-type: application/json
+
 {
     "firstName":"S",
     "lastName":"Goldman",
@@ -29,9 +35,12 @@ content-type: application/json
     "favoriteColor":"Blue",
     "birthday":"06/19/2000"
 }
+
+
 ### PUT contact
-PUT https://three41wddw2.onrender.com/contacts/65184fa528d917691711f990 HTTP/1.1
+PUT http://localhost:8080/contacts/65182514e1310be95d95b558 HTTP/1.1
 content-type: application/json
+
 {
     "firstName":"Sandman",
     "lastName":"G",
@@ -39,5 +48,44 @@ content-type: application/json
     "favoriteColor":"Cyan",
     "birthday":"12/11/22"
 }
+
+### DELETE contact
+DELETE  http://localhost:8080/contacts/651824b2d8db462ca3d702c7 HTTP/1.1
+
+
+// PRODUCTION Deploy Week 3 //////////////////////////
+### Get all contacts
+GET https://three41wddw2.onrender.com/contacts/
+
+
+### Get contact by id
+GET https://three41wddw2.onrender.com/contacts/650e9057eda1c94561e08a3e
+
+
+### Create contact
+POST https://three41wddw2.onrender.com/contacts/ HTTP/1.1
+content-type: application/json
+
+{
+    "firstName":"S",
+    "lastName":"Gangster",
+    "email":"test@test.com",
+    "favoriteColor":"Blue",
+    "birthday":"06/19/2000"
+}
+
+### PUT contact
+PUT https://three41wddw2.onrender.com/contacts/65184fa528d917691711f990 HTTP/1.1
+content-type: application/json
+
+{
+    "firstName":"Sandman",
+    "lastName":"G",
+    "email":"test@gmail.com",
+    "favoriteColor":"Cyan",
+    "birthday":"12/11/22"
+}
+
+
 ### DELETE contact
 DELETE https://three41wddw2.onrender.com/contacts/65184fa528d917691711f990 HTTP/1.1
