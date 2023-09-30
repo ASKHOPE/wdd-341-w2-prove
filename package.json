@@ -7,7 +7,7 @@
     "build": "npm install",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon app.js",
-     "lint": "eslint .",
+    "lint": "eslint .",
     "lint:fix": "eslint --fix",
     "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc"
   },
@@ -22,10 +22,10 @@
     "nodemon": "^3.0.1"
   },
   "devDependencies": {
-    "nodemon": "^3.0.1",
-     "eslint": "^8.10.0",
+    "eslint": "^8.10.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
-    "prettier": "^2.5.1"
+    "nodemon": "^3.0.1",
+    "prettier": "^2.8.8"
   }
 }
