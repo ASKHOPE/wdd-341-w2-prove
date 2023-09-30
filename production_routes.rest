@@ -1,27 +1,16 @@
-// LOCALHOST
-###
-GET http://localhost:8080/contacts
-###
-GET http://localhost:8080/contacts/650e9057eda1c94561e08a3e
-###
-GET http://localhost:8080/contacts/650e9064eda1c94561e08a3f
-###
-GET http://localhost:8080/contacts/650e9075eda1c94561e08a40
-###
-GET https://three41wddw2.onrender.com/contacts/650e9057eda1c94561e08a3e
-###
-GET https://three41wddw2.onrender.com/contacts/650e9064eda1c94561e08a3f
-###
-GET https://three41wddw2.onrender.com/contacts/650e9075eda1c94561e08a40
-
 // PRODUCTION Deploy
 ### Get all contacts
 GET https://three41wddw2.onrender.com/contacts/
+
+
 ### Get contact by id
 GET https://three41wddw2.onrender.com/contacts/650e9057eda1c94561e08a3e
+
+
 ### Create contact
 POST https://three41wddw2.onrender.com/contacts/ HTTP/1.1
 content-type: application/json
+
 {
     "firstName":"S",
     "lastName":"Gangster",
@@ -29,9 +18,11 @@ content-type: application/json
     "favoriteColor":"Blue",
     "birthday":"06/19/2000"
 }
+
 ### PUT contact
 PUT https://three41wddw2.onrender.com/contacts/65184fa528d917691711f990 HTTP/1.1
 content-type: application/json
+
 {
     "firstName":"Sandman",
     "lastName":"G",
@@ -39,5 +30,7 @@ content-type: application/json
     "favoriteColor":"Cyan",
     "birthday":"12/11/22"
 }
+
+
 ### DELETE contact
 DELETE https://three41wddw2.onrender.com/contacts/65184fa528d917691711f990 HTTP/1.1
